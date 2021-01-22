@@ -1,0 +1,135 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-right: 3.2rem;
+  height: 2.2rem;
+  width: 55.3125rem;
+  font-family: "MyriadPro-Regular", sans-serif;
+}
+.input-search {
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  margin-bottom: 2px;
+  font-size: 1.125rem;
+}
+.search-line {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.match-list {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  z-index: 11;
+  background-color: #fff;
+  max-height: 0;
+  &.active{
+    max-height: 1000px;
+  }
+  &__item {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #e2e2e2;
+    cursor: pointer;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  &__desc {
+    font-size: 1rem;
+  }
+  &__type {
+    font-size: 0.875rem;
+    color: #777777;
+  }
+}
+.search-find__categories {
+  position: relative;
+  transition: 0.5s;
+}
+.categories-text {
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem 0 1rem;
+  border-radius: 10px 0 0 10px;
+  border-right: 1px solid #e7e6e6;
+  background: #f1f1f1;
+  font-size: 1rem;
+  color: #777777;
+  height: 2.2rem;
+  white-space: nowrap;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: .5rem;
+    right: .5rem;
+    border: .375rem solid transparent;
+    border-top: .375rem solid #3c3c3c;
+  }
+}
+.search-select {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  background: #f1f1f1;
+  padding: 1.25rem 2.2rem 2.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #e7e6e6;
+}
+.search-select.open {
+  display: block;
+}
+.select__item {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  &:last-child {
+    margin-bottom: none;
+  }
+  &:hover {
+    color: #00aa4b;
+    transition: 0.5s;
+  }
+}
+.select__title {
+  margin-bottom: 2rem;
+  color: #777777;
+}
+.search-mobile {
+  position: absolute;
+  opacity: 0;
+  top: 100%;
+  width: 100%;
+  z-index: -1;
+  background-color: #fff;
+  overflow: hidden;
+  transition: all 0.5s;
+  &__form {
+    display: flex;
+  }
+  &__input {
+    padding:.5rem 0;
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+  &__button {
+    padding: .5rem 1.875rem;
+    color: #4eb369;
+    border: 1px solid #4eb369;
+    border-radius: 23px;
+    background: #fff;
+  }
+  &.active {
+    opacity: 100;
+    z-index: 9999;
+    padding: 1.25rem 1.875rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .select__item {
+    font-size: 16px;
+  }
+}
+

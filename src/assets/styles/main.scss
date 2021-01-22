@@ -1,0 +1,175 @@
+@import "./welcome.scss";
+@import "./nav.scss";
+@import "./search-bar.scss";
+@import "./logo.scss";
+@import "./provider.scss";
+@import "./order.scss";
+@import "./side-menu.scss";
+@import "./slider.scss";
+@import "./commercial.scss";
+@import "./brands.scss";
+@import "./news.scss";
+@import "./recommendation.scss";
+@import "./services.scss";
+@import "./footer.scss";
+@import "./svg-images.scss";
+@import "./dropdown.scss";
+@import "./contacts.scss";
+@import "./buttons.scss";
+@import "./fonts.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "MyriadPro-SemiExt", sans-serif;
+  font-size: 16px;
+  color: #121212;
+  @media (max-width: 1400px) {
+    font-size: 14px;
+  }
+  @media (max-width: 1220px) {
+    font-size: 12px;
+  }
+  @media (max-width: 1070px) {
+    font-size: 10px;
+  }
+  @media (max-width: 920px) {
+    font-size: 8px;
+  }
+  @media (max-width: 767px) {
+    font-size: 16px;
+    .container {
+      width: 100%;
+      &--mobile {
+        margin: 0 1.875rem auto;
+      }
+    }
+  }
+  @media (max-width: 710px) {
+    font-size: 14px;
+  }
+  @media (max-width: 560px) {
+    font-size: 12px;
+  }
+  @media (max-width: 480px) {
+    font-size: 10px;
+  }
+  @media (max-width: 400px) {
+    font-size: 8px;
+  }
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #121212;
+}
+.h1 {
+  font-size: 2.065rem;
+}
+.h2 {
+  font-size: 2.5rem;
+}
+.h3 {
+  font-size: 1.875rem;
+}
+.h4 {
+  font-size: 1.5rem;
+}
+.h5 {
+  font-size: 1.25rem;
+}
+.h6 {
+  font-size: 1.125rem;
+}
+.text {
+  &--color-green {
+    color: #00aa4b;
+  }
+  &--color-gray {
+    color: #777777;
+  }
+  &--bold {
+    font-weight: bold;
+  }
+  &--color-orange {
+    color: #ffaf2d;
+  }
+  &--color-white {
+    color: #fff;
+  }
+  &--high {
+    text-transform: uppercase;
+  }
+}
+.wrapper {
+  background-color: #e8e7e7;
+  width: 100%;
+  overflow: hidden;
+}
+.container {
+  max-width: 1545px;
+  width: 95%;
+  margin: 0 auto;
+  &--mobile {
+    // padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // pp
+    padding: .85rem 0;
+  }
+}
+.title {
+  &-big {
+    font-size: 2.5rem;
+  }
+  &--white {
+    color: #ffffff;
+  }
+  &--light {
+    font-family: "MyriadPro-LightSemiExt", sans-serif; 
+  }
+}
+.shadow {
+  display: none;
+  width: 100%;
+  height: 500%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  &.active {
+    display: block;
+  }
+}
+select {
+  outline: none;
+}
+input {
+  outline: none;
+  border: none;
+}
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+button {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  &:hover {
+    cursor: pointer;
+  }
+}

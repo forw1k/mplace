@@ -1,0 +1,84 @@
+.footer {
+  padding: 2.25rem 0;
+  white-space: nowrap;
+  background-color: #191919;
+  font-family: "MyriadPro-lightsemiext", sans-serif;
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 5rem 0 4.5rem;
+  }
+  &__logo {
+    font-size: 16px;
+  }
+  .logo {
+    &__title {
+      font-size: 1.5em;
+      color: #fff;
+    }
+    &__desc {
+      font-size: 1em;
+      color: #787878;
+    }
+    &__img {
+      width: 2.5em;
+      height: 2.5em;
+      margin-right: 1rem;
+    }
+  }
+}
+.made-by {
+  font-size: 18px;
+  color: #fff;
+  font-family: "MyriadPro-lightsemiext", sans-serif;
+}
+@media (max-width: 767px) {
+  .footer {
+    padding: 2.425rem 0;
+    &__container {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 2.875rem 0 3.0625rem;
+    }
+    .logo {
+      margin-bottom: 1.75rem;
+      margin-right: 0;
+      &__img {
+        width: 5.5rem;
+        height: 5.5rem;
+        margin-right: 1.5rem;
+      }
+      &__title {
+        font-size: 3.15625rem;
+        font-family: "MyriadPro-Light", sans-serif;
+        font-weight: bold;
+        //pp
+        letter-spacing: 1.2px;
+        margin-top: 0.2rem;
+        margin-bottom: -0.5rem;
+      }
+      &__desc {
+        font-size: 1.875rem;
+        color: #777777;
+        font-family: "MyriadPro-lightsemiext", sans-serif;
+        //pp
+        letter-spacing: 0.3px;
+      }
+    }
+    .made-by {
+      &__text {
+        font-size: 2.53125rem;
+        //pp
+        letter-spacing: 0.15px;
+      }
+    }
+  }
+}
+@media (max-width: 710px) {
+  .footer{
+    .logo__desc{
+      font-size: 1.5rem;
+    }
+  }
+}

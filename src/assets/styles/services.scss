@@ -1,0 +1,231 @@
+.services {
+  display: flex;
+  margin-bottom: 10.75rem;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7.5rem 0 4.5rem;
+  }
+  &__desc {
+    width: 52.4375rem;
+    margin-right: 16.125em;
+    font-family: "MyriadPro-Regular", sans-serif;
+  }
+  &__text {
+    font-size: 1.125rem;
+    line-height: 1.18;
+    &:first-child {
+      margin-bottom: 1.75rem;
+    }
+    .text{
+      font-family: "MyriadPro-LightSemiExt", sans-serif;
+      @-moz-document url-prefix(){
+        font-weight: normal;
+      }
+    }
+  }
+  &__title {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.15;
+    color: #121212;
+    font-family: "MyriadPro-Regular", sans-serif;
+  }
+  &__assurance {
+    margin-right: 0;
+    padding-top: 3.6rem;
+    .logo {
+      font-size: 1rem;
+      &__img{
+      margin-bottom: 1.5rem;
+      }
+      &__desc{
+        font-family: "MyriadPro-LightSemiExt", sans-serif;
+      }
+      &__name {
+        margin-bottom: 1.5rem;
+      }
+      &__text {
+        margin-bottom: 1.75rem;
+      }
+      &__inform {
+        color: #1d1d1d;
+        font-size: 1.5rem;
+      }
+      &__indicators {
+        color: #777777;
+        font-size: 1.125rem;
+        font-family: "MyriadPro-LightSemiExt", sans-serif;
+      }
+      &__showing{
+        font-size: 1.125rem;
+        font-family: "MyriadPro-LightSemiExt", sans-serif;
+        line-height: 1.2;
+      }
+    }
+    .title-big {
+      font-size: 2.5rem;
+      color: #171717;
+      font-family: "MyriadPro-SemiExt", sans-serif;
+      letter-spacing: -1.5px;
+      margin-bottom: -.25rem;
+    }
+  }
+  &__img {
+    display: flex;
+    width: 9.4375rem;
+    height: 9.4375rem;
+    margin-bottom: 2rem;
+  }
+}
+.acc-body {
+  max-height: 13.5rem;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+  margin-bottom: 2.6875rem;
+  &.open {
+    max-height: 1000px;
+  }
+}
+.more-inf {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  background-color: #232323;
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 13px;
+    background-color: #fff;
+    transform: translate(50%, 50%);
+    top: 25%;
+    right: 50%;
+  }
+  &:after {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 2px;
+    background-color: #fff;
+    transform: translate(50%, 50%);
+    top: 47%;
+    right: 50%;
+  }
+  &.active {
+    &:before {
+      width: 0;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .services {
+    margin-bottom: 9.6rem;
+    &__container {
+      flex-direction: column-reverse;
+      justify-content: unset;
+      padding: 0 2.5rem 0 1.7rem;
+    }
+    &__desc {
+      margin-right: 0;
+      max-width: 100%;
+    }
+    &__text{
+      .services__title{
+        font-size: 3.125rem;
+        margin-bottom: 3.5rem;
+        //pp
+        letter-spacing: -2.2px;
+      }
+      &:first-child{
+        margin-bottom: 4.5rem;
+      }
+    }
+    &__assurance {
+      margin-bottom: 8rem;
+      padding-left: 3.625rem;
+      .title-big{
+        font-size: 3.125rem;
+        font-family: 'MyriadPro-Light';
+        font-weight: bold;
+        //pp
+        letter-spacing: 1.2px;
+      }
+    }
+    &__title {
+      margin-bottom: -0.5rem;
+      font-family: inherit;
+    }
+    .text {
+      font-size: 1.875rem;
+    }
+    .logo {
+      margin: 0 0 3.3rem 0;
+      &__title {
+        font-size: 3.125rem;
+      }
+      &__desc {
+        font-size: 1.5625rem;
+      }
+      &__name {
+        margin-bottom: 2.25rem;
+      }
+      &__text{
+        font-family: 'MyriadPro-LightSemiExt', sans-serif;
+      }
+      &__showing {
+        font-size: 1.875rem;
+        font-family: 'MyriadPro-LightSemiExt', sans-serif;
+      }
+      &__img {
+        width: 15.5625rem;
+        height: 15.5625rem;
+        margin-bottom: 3.1375rem;
+        &--big {
+          max-width: unset;
+          max-height: unset;
+        }
+      }
+      &__inform {
+        color: #1d1d1d;
+        font-size: 2.5rem;
+        //pp
+        font-family: 'MyriadPro-Light', sans-serif;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+      &__indicators {
+        color: #777777;
+        font-size: 1.875rem;
+        //pp
+        letter-spacing: -0.5px;
+      }
+    }
+  }
+  .acc-body {
+    max-height: 0;
+    &.open {
+      max-height: 1000px;
+    }
+  }
+  .more-inf{
+    width: 100px;
+    height: 100px;
+    margin-left: 3px;
+    &:before{
+      height: 26px;
+    }
+    &:after{
+      width: 26px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .services {
+    &__assurance {
+      padding-left: 1rem;
+    }
+  }
+}

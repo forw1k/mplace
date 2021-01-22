@@ -1,0 +1,60 @@
+.commercial{
+  flex: 0 1 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 2px solid #ffaf2d;
+  border-radius: 2px;
+  background-color: #ffffff;
+  padding: 3rem 1.8rem;
+  &__img{
+    max-width: 4.375rem;
+    margin-bottom: 0.8rem;
+  }
+  &__slogan{
+    font-family: 'MyriadPro-lightsemiext', sans-serif;
+    font-size: 1.125rem;
+    color: #121212;
+    line-height: 1.33;
+  }
+  &__title{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: "MyriadPro-Regular", sans-serif;
+    //pp
+    letter-spacing: -2px;
+  }
+}
+@media (max-width: 767px) {
+  .commercial{
+    height: 29.75rem;
+    margin: 0 1.875rem 1.875rem 1.875rem;
+    padding: 5rem 4rem 3.5rem 3.6rem;
+    justify-content: flex-start;
+    &__slogan{
+      font-size: 1.5625em;
+    }
+    &__title{
+      font-size: 3.125rem;
+      //pp 
+      letter-spacing: -2.5px;
+      margin-bottom: 2.2rem;
+    }
+    &__img{
+      max-width: unset;
+      width: 7.375rem;
+      height: 9.125rem;
+      margin-bottom: 1.5rem;
+    }
+    .side-menu__link{
+      font-size: 1.875rem;
+    }
+    .side-menu__text{
+      font-family: 'MyriadPro-LightSemiExt', sans-serif;
+      &::after {
+        content: ">";
+        padding-left: 1rem;
+      }
+    }
+  }
+}

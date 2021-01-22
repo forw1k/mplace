@@ -1,0 +1,263 @@
+.recommendation {
+  margin-bottom: 10.25rem;
+  &__container{
+    max-width: 1391px;
+    padding-left: 5rem;
+  }
+  &__headline {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto 4.0625rem;
+  }
+  &__title {
+    color: #232323;
+    margin-bottom: .75rem;
+    font-family: "MyriadPro-Regular", sans-serif;
+    letter-spacing: -1px;
+  }
+  &__desc {
+    font-size: 1rem;
+    font-family: "MyriadPro-LightSemiExt", sans-serif;
+    color: #787878;
+  }
+  &-list {
+    display: flex;
+    max-height: 46.5625rem;
+    overflow: hidden;
+    &__left {
+      display: flex;
+      width: 37.1875rem;
+      margin-right: .625rem;
+    }
+    &__right {
+      width: 49rem;
+    }
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    &--tall {
+      padding-top: 4.125rem;
+    }
+    &--white {
+      background: #fff;
+    }
+    &--dark {
+      background: #232323;
+    }
+  }
+  &__text {
+    text-align: center;
+    margin-bottom: 2.5625rem;
+  }
+  &__brand {
+    font-size: 1.25rem;
+    color: #121212;
+    font-family: "MyriadPro-LightSemiExt", sans-serif;
+    text-transform: uppercase;
+  }
+  &__equipment {
+    margin-bottom: 1.25rem;
+    font-size: 1.875rem;
+    color: #121212;
+    font-family: "MyriadPro-Regular", sans-serif;
+  }
+  &__slogan {
+    font-size: 1rem;
+    font-family: "MyriadPro-LightSemiExt", sans-serif;
+    color: #777777;
+  }
+  &__pic {
+    width: 100%;
+  }
+}
+.recommendation__item--tall .recommendation__img {
+  width: 27.0625rem;
+  margin: 0 auto -400px;
+}
+.recommendation__item--tall .recommendation__slogan {
+  margin: 0 auto;
+  width: 47%;
+}
+.recommendation__item--wide:first-child .recommendation__text {
+  position: absolute;
+  top: 7.25rem;
+  left: 15.7rem;
+  text-align: left;
+  margin-bottom: 0;
+}
+.recommendation__item--wide:first-child .recommendation__brand{
+  margin-bottom: 0;
+}
+.recommendation__item--wide:first-child .recommendation__equipment{
+  margin-bottom: 1.25rem;
+}
+.recommendation__item--wide:last-child .recommendation__text {
+  position: absolute;
+  top: 5.75rem;
+  left: 3.75rem;
+  text-align: left;
+  margin-bottom: 0;
+}
+.recommendation__item--wide:first-child .recommendation__img {
+  width: 23.5625rem;
+  height: 26.0625rem;
+  margin: 0 0 0 -100%;
+}
+.recommendation__item--wide:last-child .recommendation__img {
+  width: 23.5625rem;
+  height: 26.0625rem;
+  margin: -1% -23% -14% 51%;
+}
+.recommendation__item--dark .recommendation__brand {
+  color: #fff;
+  margin-bottom: 0.875rem;
+}
+.recommendation__item--dark .recommendation__equipment {
+  width: 60%;
+  color: #fff;
+  margin-bottom: 1.625rem;
+}
+.recommendation__item--wide:last-child .recommendation__slogan {
+  width: 55%;
+}
+.recommendation__item--wide:first-child .recommendation__slogan {
+  width: 75%;
+}
+.recommendation__item--wide:first-child {
+  margin-bottom: 10px;
+}
+.recommendation__item--wide:last-child {
+  padding-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .recommendation {
+    margin-bottom: 6.25rem;
+    &__container {
+      padding-left: 1.875rem;
+      padding-right: 1.875rem;
+    }
+    &__headline {
+      width: 100%;
+      margin-bottom: 4.5rem;
+      .title-big {
+        font-size: 3.125rem;
+      }
+    }
+    &__title {
+      font-family: "MyriadPro-Light", sans-serif;
+      font-weight: bold;
+      //pp
+      letter-spacing: 1px;
+      margin-bottom: 0.7rem;
+    }
+    &__desc {
+      font-size: 1.875rem;
+      font-family: "MyriadPro-LightSemiExt", sans-serif;
+    }
+    &-list {
+      flex-direction: column;
+      max-height: 100%;
+      &__left {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      &__right {
+        width: 100%;
+      }
+    }
+    &__text {
+      text-align: left;
+      margin-bottom: 0;
+    }
+    &__brand {
+      font-size: 1.875rem;
+      margin-bottom: 0.6rem;
+      margin-top: 5rem;
+    }
+    &__equipment {
+      font-size: 2.5rem;
+      margin-bottom: 2.85rem;
+      //pp
+      letter-spacing: -1px;
+    }
+    &__slogan {
+      font-size: 1.5625rem;
+      //pp
+      font-family: "MyriadPro-Light", sans-serif;
+      letter-spacing: 1.3px;
+    }
+  }
+  .recommendation__item {
+    padding: 1.875rem 0 1.875rem 4.1125rem;
+    height: 30.1875rem;
+  }
+  .recommendation__item--tall {
+    flex-direction: row;
+  }
+  .recommendation__item--tall .recommendation__text {
+    margin-right: 3.625rem;
+  }
+  .recommendation__item--tall .recommendation__slogan {
+    width: unset;
+    margin: unset;
+  }
+  .recommendation__item--tall .recommendation__img {
+    margin: 0 0 -15.5% 0;
+    width: 16.5rem;
+    min-width: 37%;
+  }
+  .recommendation__item--tall .recommendation__pic {
+    width: 113%;
+  }
+  .recommendation__item--tall .recommendation__text {
+    max-width: 60%;
+    height: 100%;
+  }
+  .recommendation__item--wide:first-child .recommendation__brand {
+    margin-bottom: 1.3rem;
+  }
+  .recommendation__item--wide:first-child .recommendation__equipment {
+    margin-bottom: 3.75rem;
+  }
+  .recommendation__item--wide:first-child .recommendation__img {
+    margin: 3% 0 0 -108%;
+  }
+  .recommendation__item--wide:first-child .recommendation__text {
+    top: -0.85rem;
+    left: 17.2rem;
+  }
+  .recommendation__item--wide:first-child .recommendation__slogan {
+    width: 95%;
+  }
+  .recommendation__item--wide:last-child .recommendation__img {
+    width: 23.5625rem;
+    height: 26.0625rem;
+    margin: 9% -43% -14% 40%;;
+  }
+  .recommendation__item--wide:last-child .recommendation__text {
+    top: 1.625rem;
+    left: 4.15rem;
+  }
+  .recommendation__item--wide:last-child .recommendation__slogan {
+    width: 57%;
+    //pp
+    margin-left: .25rem;
+    letter-spacing: 1.1px;
+  }
+  .recommendation__item--wide:last-child .recommendation__brand {
+    margin-top: 6.6rem;
+    margin-bottom: 0.4rem;
+  }
+}
+@media(max-width: 710px) {
+  .recommendation__slogan{
+    font-size: 1.375rem;
+  }
+}

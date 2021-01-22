@@ -1,0 +1,60 @@
+.order{
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 1 6.5%;
+  flex-shrink: 0;
+  height: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  &:hover{
+    background-color: #ffaf2d;
+    color: #fff;
+    .order__pic{
+      display: none;
+      &--hover{
+        display: block;
+      }
+    }
+  }
+  &__img{
+    height: 2rem;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media(max-width: 920px){
+      margin-right: 1rem;
+    }
+  }
+  &__quantity{
+    color: #ffaf2d;
+    line-height: .25rem;
+    font-size: 1em;
+  }
+  &__pic{
+    width: 1.875rem;
+    height: 1.625rem;
+    &--hover{
+      display: none;
+    }
+  }
+  &__summ{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "MyriadPro-Regular", sans-serif;
+  }
+  &__name{
+    font-family: 'MyriadPro-lightsemiext', sans-serif;
+    color: #777777;
+    font-size: .875rem;
+  }
+}
+.order:hover .order__quantity,
+.order:hover .order__summ,
+.order:hover .order__name{
+    background-color: #ffaf2d;
+    color: #fff;
+}

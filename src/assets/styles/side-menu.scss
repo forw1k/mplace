@@ -1,0 +1,90 @@
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 1 20%;
+  padding: 1.8rem 0 0 0;
+  background-color: #ffffff;
+  margin-right: 1.25rem;
+  &__item {
+    padding: 0.8rem 1.5rem;
+    border-bottom: 1px solid rgba($color: #bababa, $alpha: 0.25);
+    font-family: "MyriadPro-SemiExt", sans-serif;
+    text-align: left;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  &__text {
+    margin-right: 0.625rem;
+    font-family: "MyriadPro-SemiExt", sans-serif;
+    &:hover {
+      color: #ffaf2d;
+    }
+    &--commercial{
+      color: #ffaf2d;
+      &::after{
+        margin-left: .5rem;
+        content: '>';
+      }
+    }
+  }
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #303030;
+    //pp
+    letter-spacing: -.35px;
+    &:hover{
+      color: #ffaf2d;
+    }
+    &--commercial {
+      justify-content: unset;
+      font-size: 18px;
+    }
+  }
+  &__head {
+    font-family: "MyriadPro-Regular", sans-serif;
+    color: #ffaf2d;
+    font-size: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    // margin-bottom: .75rem;
+    white-space: nowrap;
+    //pp
+    letter-spacing: -1px;
+  }
+  &--dropdown {
+    min-width: 25rem;
+    flex: unset;
+    font-size: 1.125rem;
+    margin-right: 0;
+    padding-left: 0;
+    box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.2);
+    padding-top: 2rem;
+    padding-right: 1.25rem;
+    padding-bottom: 1.5rem;
+    padding-left: 5.375rem;
+    white-space: nowrap;
+    .side-menu__item{
+      border-bottom: none;
+      padding: 0.56rem 0;
+      font-family: "MyriadPro-LightSemiExt", sans-serif;
+    }
+    .side-menu__symbol{
+      font-size: 1rem;
+      &:hover{
+        color: #00aa4b;
+      }
+    }
+  }
+}
+ .side-menu__link:hover .side-menu__symbol {
+  color: #00aa4b;
+}
+@media(max-width: 767px) {
+  .side-menu{
+    display: none;
+  }
+}

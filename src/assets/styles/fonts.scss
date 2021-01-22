@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "MyriadPro-Regular";
+  src: url("/assets/fonts/MyriadPro-Regular.ttf") format("truetype");
+  src: url("/assets/fonts/MyriadPro-Regular.woff") format("woff");
+  src: url("/assets/fonts/MyriadPro-Regular.woff2") format("woff2");
+}
+@font-face {
+	font-family: 'MyriadPro-LightSemiExt';
+	src: url('/assets/fonts/myriadpro-lightsemiext.eot'); /* IE 9 Compatibility Mode */
+	src: url('/assets/fonts/myriadpro-lightsemiext.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('/assets/fonts/myriadpro-lightsemiext.woff2') format('woff2'), /* Super Modern Browsers */
+		url('/assets/fonts/myriadpro-lightsemiext.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('/assets/fonts/myriadpro-lightsemiext.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('/assets/fonts/myriadpro-lightsemiext.svg#myriadpro-lightsemiext') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'MyriadPro-SemiExt';
+	src: url('/assets/fonts/myriadpro-semiext.eot'); /* IE 9 Compatibility Mode */
+	src: url('/assets/fonts/myriadpro-semiext.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('/assets/fonts/myriadpro-semiext.woff2') format('woff2'), /* Super Modern Browsers */
+		url('/assets/fonts/myriadpro-semiext.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('/assets/fonts/myriadpro-semiext.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('/assets/fonts/myriadpro-semiext.svg#myriadpro-semiext') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'MyriadPro-Light';
+	src: url('/assets/fonts/myriadpro-light.eot'); /* IE 9 Compatibility Mode */
+	src: url('/assets/fonts/myriadpro-light.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('/assets/fonts/myriadpro-light.woff2') format('woff2'), /* Super Modern Browsers */
+		url('/assets/fonts/myriadpro-light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('/assets/fonts/myriadpro-light.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('/assets/fonts/myriadpro-light.svg#myriadpro-light') format('svg'); /* Chrome < 4, Legacy iOS */
+}

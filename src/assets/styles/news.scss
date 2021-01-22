@@ -1,0 +1,119 @@
+.news {
+  margin-bottom: 10rem;
+  font-size: 1rem;
+  &__container {
+    padding: 0 4.1rem;
+  }
+  &__title {
+    margin-bottom: 2.9rem;
+    color: #121212;
+    //pp
+    letter-spacing: -1.9px;
+  }
+  &-big {
+    margin-right: 6.5625rem;
+    width: 30.625rem;
+    .item {
+      width: 100%;
+      &__img {
+        width: 30.625rem;
+        height: 19.0625rem;
+        margin-bottom: 1.5rem;
+      }
+      &__pic {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+  &-preview {
+    max-width: 51.25rem;
+    .item {
+      display: flex;
+      width: 100%;
+      margin-bottom: 2.8125rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &__img {
+        max-width: 11.875rem;
+        max-height: 10.5rem;
+        min-width: 25%;
+        margin-right: .25rem;
+      }
+      &__pic {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      &__link {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      .tags-wrap {
+        display: flex;
+        flex-direction: column;
+      }
+      &:nth-child(even) {
+        .tags-info {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.9rem;
+  }
+}
+
+.tags {
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.625rem;
+    font-family: "MyriadPro-lightsemiext", sans-serif;
+    &__date {
+      color: #777777;
+    }
+    &__brand {
+      font-family: "MyriadPro-lightsemiext", sans-serif;
+    }
+    &--preview{
+      margin-bottom: 0.25rem;
+    }
+  }
+  &-name {
+    font-size: 1.5rem;
+    color: #121212;
+    margin-bottom: 1.2rem;
+    font-family: "MyriadPro-Regular", sans-serif;
+    &__recommendation {
+      color: #fff;
+      margin-bottom: 1.6875rem;
+      &--black {
+        color: #121212;
+      }
+    }
+  }
+  &-desc {
+    color: #121212;
+    font-size: 1rem;
+    font-family: "MyriadPro-LightSemiExt";
+    font-weight: bold;
+    @-moz-document url-prefix(){
+      font-weight: normal;
+    }
+    &__recommendation {
+      color: #777777;
+      margin-bottom: 2.5625rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .news {
+    display: none;
+  }
+}
