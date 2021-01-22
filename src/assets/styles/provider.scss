@@ -5,6 +5,9 @@
   flex-shrink: 0;
   white-space: normal;
   font-family: "MyriadPro-lightsemiext", sans-serif;
+  @media(max-width: 1070px) {
+    flex-basis: 130px;
+  }
   @media (max-width: 920px) {
     margin-right: 1rem;
   }
